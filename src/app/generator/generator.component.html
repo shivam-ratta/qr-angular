@@ -1,0 +1,7 @@
+<input type="text" placeholder="id" #idInput><input type="text" placeholder="name" #nameInput><button (click)="generateQr(idInput.value, nameInput.value)">Generate</button>
+&nbsp;
+<button routerLink="/scanner">Scanner</button>
+<br>
+<div style="text-align: center">
+  <img [src]="qr" alt="" style="width: 60%">
+</div>
